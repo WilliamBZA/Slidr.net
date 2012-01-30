@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script src="@Url.Content("~/Scripts/jquery.signalR.min.js")" type="text/javascript"></script>
+<script src="/signalr/hubs" type="text/javascript"></script>
+
+<div id="screen" ></div>
+<div id="loginControls">
+    <input type="text" id="username" placeholder="Username" name="username" />
+    <input id="joinButton" type="button" value="Join presentation" />
+</div>
+<div id="slideControls">
+    <input id="previousSlide" type="button" value="Previous Slide" />
+    <input id="nextSlide" type="button" value="Next Slide" />
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#slideControls').hide();
+
+        // Connect to SignalR Hub
+        // Proxy created on the fly
+        var slidemaster = $.connection.slidemaster;
+
+        // Declare a JS method that the server can call
+        slidemaster.SlideChanged = function (slideNumber) {
+            setSlideTo(slideNumber);
+        };
+
+        // Start the connection
+        $.connection.hub.start();
+
+
+        // Wire up click event to join presentation
+        $('#joinButton').click(function () {
+            var username = $('#username').val();
+
+            if (username !== "") {
+                slidemaster.joinSlideshow(username).done(function (currentSlide) {
+                    slidemaster.startSlideshow(username, "Go!").done(function () {
+                        $('#loginControls').hide();
+                        $('#slideControls').show();
+
+                        setSlideTo(currentSlide);
+                    });
+                });
+            }
+        });
+
+        $('#nextSlide').click(function () {
+            slidemaster.nextSlide().done(function () {
+            });
+        });
+
+        $('#previousSlide').click(function () {
+            slidemaster.previousSlide();
+        });
+
+        // Check for HTML5 placeholder support by browser
+        if (!Modernizr.input.placeholder) {
+            //alert('no placeholder support');
+            $('#username').placeholder();
+        }
+    });
+
+    function setSlideTo(slideNumber) {
+        if (slideNumber > 0) {
+            $('#screen').html('<img src="/Home/SlideNumber/' + slideNumber + '?width=800&height=600" />');
+        }
+    }
+</script>

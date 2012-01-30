@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Drawing;
+using System.IO;
 
 namespace Slidr.net.Controllers
 {
@@ -15,9 +17,27 @@ namespace Slidr.net.Controllers
             return View();
         }
 
-        public ActionResult About()
+        [Authorize]
+        public ActionResult StartSlideshow()
         {
             return View();
+        }
+
+        public ActionResult SlideNumber(int id, int width, int height)
+        {
+            string sourceLocation = Server.MapPath(string.Format("/Content/Images/Slide{0}.png", id));
+
+            if (System.IO.File.Exists(sourceLocation))
+            {
+                using (var sourceBitmap = Bitmap.FromFile(sourceLocation))
+                {
+                    return new ImageResult(sourceBitmap, width, height);
+                }
+            }
+            else
+            {
+                return new HttpNotFoundResult();
+            }
         }
     }
 }

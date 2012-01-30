@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="096a6256-42cc-4941-873e-d5fd054754ee" name="williamb@WILLIAMB-PC 2012-01-27 12:59:58" runUser="williamb-pc\williamb" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="1f6affb4-4f09-4148-97ee-9d068f97a927">
+    <Deployment runDeploymentRoot="williamb_WILLIAMB-PC 2012-01-27 12_59_58">
+      <DeploymentItem filename="D:\Development\BBD_2\ATC Sessions\Astra Sessions\SignalR\Slidr.net\Slidr.net\bin\Slidr.net.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-01-27T12:59:58.2210300+02:00" queuing="2012-01-27T12:59:59.8161212+02:00" start="2012-01-27T12:59:59.9311278+02:00" finish="2012-01-27T13:00:01.0061893+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Index" storage="d:\development\bbd_2\atc sessions\astra sessions\signalr\slidr.net\slidr.net.tests\bin\debug\slidr.net.tests.dll" id="b6f6bb35-b257-d3a4-69ca-2659e3bacc15">
+      <Execution id="49ce16d1-920e-4e09-b26e-e4173e36ff03" />
+      <TestMethod codeBase="D:/Development/BBD_2/ATC Sessions/Astra Sessions/SignalR/Slidr.net/Slidr.net.Tests/bin/Debug/Slidr.net.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Slidr.net.Tests.Controllers.HomeControllerTest, Slidr.net.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index" />
+    </UnitTest>
+    <UnitTest name="About" storage="d:\development\bbd_2\atc sessions\astra sessions\signalr\slidr.net\slidr.net.tests\bin\debug\slidr.net.tests.dll" id="a7649672-9cd5-7304-9396-847b1c7e2304">
+      <Execution id="d85c1218-8471-4892-9d7d-216d1b140f6e" />
+      <TestMethod codeBase="D:/Development/BBD_2/ATC Sessions/Astra Sessions/SignalR/Slidr.net/Slidr.net.Tests/bin/Debug/Slidr.net.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Slidr.net.Tests.Controllers.HomeControllerTest, Slidr.net.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="About" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a7649672-9cd5-7304-9396-847b1c7e2304" executionId="d85c1218-8471-4892-9d7d-216d1b140f6e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b6f6bb35-b257-d3a4-69ca-2659e3bacc15" executionId="49ce16d1-920e-4e09-b26e-e4173e36ff03" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d85c1218-8471-4892-9d7d-216d1b140f6e" testId="a7649672-9cd5-7304-9396-847b1c7e2304" testName="About" computerName="WILLIAMB-PC" duration="00:00:00.4379716" startTime="2012-01-27T12:59:59.9791305+02:00" endTime="2012-01-27T13:00:00.8561807+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d85c1218-8471-4892-9d7d-216d1b140f6e">
+    </UnitTestResult>
+    <UnitTestResult executionId="49ce16d1-920e-4e09-b26e-e4173e36ff03" testId="b6f6bb35-b257-d3a4-69ca-2659e3bacc15" testName="Index" computerName="WILLIAMB-PC" duration="00:00:00.0529791" startTime="2012-01-27T13:00:00.8581808+02:00" endTime="2012-01-27T13:00:00.9151841+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="49ce16d1-920e-4e09-b26e-e4173e36ff03">
+    </UnitTestResult>
+  </Results>
+</TestRun>

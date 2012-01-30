@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c0ca73ba-26f3-44b0-ac8e-f4d8ae5900e5" name="williamb@WILLIAMB-PC 2012-01-30 09:44:37" runUser="williamb-pc\williamb" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="012d8611-c608-4284-96ef-ce3871512f0d">
+    <Deployment runDeploymentRoot="williamb_WILLIAMB-PC 2012-01-30 09_44_37">
+      <DeploymentItem filename="D:\Development\BBD_2\ATC Sessions\Astra Sessions\SignalR\Slidr.net\Slidr.net\bin\Slidr.net.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-01-30T09:44:37.6835879+02:00" queuing="2012-01-30T09:44:40.2427343+02:00" start="2012-01-30T09:44:40.3887426+02:00" finish="2012-01-30T09:44:42.3408543+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Index" storage="d:\development\bbd_2\atc sessions\astra sessions\signalr\slidr.net\slidr.net.tests\bin\debug\slidr.net.tests.dll" id="b6f6bb35-b257-d3a4-69ca-2659e3bacc15">
+      <Execution id="7fc22a8c-c7dc-4347-bd1d-f975c6d55d71" />
+      <TestMethod codeBase="D:/Development/BBD_2/ATC Sessions/Astra Sessions/SignalR/Slidr.net/Slidr.net.Tests/bin/Debug/Slidr.net.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Slidr.net.Tests.Controllers.HomeControllerTest, Slidr.net.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b6f6bb35-b257-d3a4-69ca-2659e3bacc15" executionId="7fc22a8c-c7dc-4347-bd1d-f975c6d55d71" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="7fc22a8c-c7dc-4347-bd1d-f975c6d55d71" testId="b6f6bb35-b257-d3a4-69ca-2659e3bacc15" testName="Index" computerName="WILLIAMB-PC" duration="00:00:00.2282089" startTime="2012-01-30T09:44:40.4927486+02:00" endTime="2012-01-30T09:44:42.2008463+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7fc22a8c-c7dc-4347-bd1d-f975c6d55d71">
+    </UnitTestResult>
+  </Results>
+</TestRun>
